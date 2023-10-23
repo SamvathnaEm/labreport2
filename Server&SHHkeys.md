@@ -8,7 +8,7 @@
 
 ### Here are the two screenshots of using ```/add-message```
 
-#### ```/add-message?s=Hello```**
+#### ```/add-message?s=Hello```
 ![Image](add-message(1).png)
 
 **Which methods in your code are called?**
@@ -27,7 +27,7 @@ The relevant fields of the Handler class are:
 Based on the example above, the value "Hello" is extracted from the query parameter ```s=Hello```, and is added to the ```newMessage``` array at the current value of i. Initially, the integer variable ```i``` was 0 when the ```newMessages``` array was empty. However, after the user's request, the ```newMessage``` array will contain value "Hello" at index 0. Then, the value of i is incremented by 1 to reflect the addition of the new message. 
 
 
-#### ```/add-message?s=How are you```**
+#### ```/add-message?s=How are you```
 ![Image](add-message(2).png)
 
 **Which methods in your code are called?**
