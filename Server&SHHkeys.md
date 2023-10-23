@@ -32,3 +32,8 @@ How do the values of any relevant fields of the class change from this specific 
 ![Image](part2(3-1).png)
 ![Image](part2(3-2).png)
 ## Part 3
+There are a couple of things I learned from the lab in week 3 that I didn't know before. One thing is how to set up the SSH keys for easy access. I can now log onto my remote account again without having to type out the password. I am so glad that I can do that from my computer. I also got introduced to the two new terminal commands, the ```scp``` and ```mkdir``` command. 
+
+```Scp```: copies directories and files from local machine to remote server.
+```Mkdir```: This command allows you to make a new directory.
+
