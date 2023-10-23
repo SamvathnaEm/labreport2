@@ -11,7 +11,7 @@
 #### ```/add-message?s=Hello```
 ![Image](add-message(1).png)
 
-**Which methods in your code are called?**
+**Which methods in your code are called?**<br>
 When the user requests to add a message by adding the "/add-messages?s=Hello" to the original link, the handleRequest method is being called in the handler class. 
 
 **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
@@ -30,7 +30,7 @@ Based on the example above, the value "Hello" is extracted from the query parame
 #### ```/add-message?s=How are you```
 ![Image](add-message(2).png)
 
-**Which methods in your code are called?**
+**Which methods in your code are called?**<br>
 When the user requests to add a message by adding the "/add-messages?s=How are you" to the original link, the handleRequest method is being called in the handler class again just like it did for the previous request. 
 
 **What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
