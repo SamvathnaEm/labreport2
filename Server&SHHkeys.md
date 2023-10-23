@@ -9,15 +9,20 @@
 
 ![Image](add-message(1).png)
 
-Which methods in your code are called?
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+#### Which methods in your code are called?
+
+#### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+
+#### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+
 
 ![Image](add-message(2).png)
 
-Which methods in your code are called?
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+#### Which methods in your code are called?
+
+#### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+
+#### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
 
 ## Part 2
 
@@ -34,6 +39,6 @@ How do the values of any relevant fields of the class change from this specific 
 ## Part 3
 There are a couple of things I learned from the lab in week 3 that I didn't know before. One thing is how to set up the SSH keys for easy access. I can now log onto my remote account again without having to type out the password. I am so glad that I can do that from my computer. I also got introduced to the two new terminal commands, the ```scp``` and ```mkdir``` command. 
 
-```Scp```: copies directories and files from local machine to remote server.
-```Mkdir```: This command allows you to make a new directory.
+```Scp```: copies directories and files from local machine to remote server.<br>
+```Mkdir```: allows you to make a new directory.<br>
 
