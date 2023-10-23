@@ -3,26 +3,49 @@
 ## Part 1
 ### Here is the code for my ```StringServer```.
 
+**StringServer.java**
 ![Image](code.png)
 
 ### Here are the two screenshots of using ```/add-message```
 
+#### ```/add-message?s=Hello```**
 ![Image](add-message(1).png)
 
-#### Which methods in your code are called?
+**Which methods in your code are called?**
+When the user requests to add a message by adding the "/add-messages?s=Hello" to the original link, the handleRequest method is being called in the handler class. 
 
-#### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+**What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
-#### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+Inside the ```public String handleRequest(URI url)``` method, url is considered as an argument representing the URI of the request. Therefore, based on the example above, the URI should be ```http://0-0-0-0-4343-1met69e97cp27w2kjp19raqks.us.edusercontent.com/add-message?s=Hello```
+
+The relevant fields of the Handler class are: 
+* The integer variable ```i```, which has been initialized to 0. It keeps track of how many messages are stored in the ```newMessage``` array.
+* The ```newMessage``` array, which has been declared with a fixed size of 100. This array is used to store the message. Every time when a new message is added, it is stored in this array. 
+
+**How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+
+Based on the example above, the value "Hello" is extracted from the query parameter ```s=Hello```, and is added to the ```newMessage``` array at the current value of i. Initially, the integer variable ```i``` was 0 when the ```newMessages``` array was empty. However, after the user's request, the ```newMessage``` array will contain value "Hello" at index 0. Then, the value of i is incremented by 1 to reflect the addition of the new message. 
 
 
+#### ```/add-message?s=How are you```**
 ![Image](add-message(2).png)
 
-#### Which methods in your code are called?
+**Which methods in your code are called?**
+When the user requests to add a message by adding the "/add-messages?s=How are you" to the original link, the handleRequest method is being called in the handler class again just like it did for the previous request. 
 
-#### What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+**What are the relevant arguments to those methods, and the values of any relevant fields of the class?**
 
-#### How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+Inside the ```public String handleRequest(URI url)``` method, url is considered as an argument representing the URI of the request. Therefore, based on the example above, the URI should be ```http://0-0-0-0-4343-1met6997cp27w2kjp19raqks.us.edusercontent.com/add-message?s=How%20are%20you```
+
+The relevant fields of the Handler class are: 
+* The integer variable ```i```, which has been incremented by 1, now has a value of 1. It keeps track of how many messages are stored in the newMessage array.
+* The ```newMessage``` array, which has been declared with a fixed size of 100, has a value "Hello" in the first index position at 0. This array is used to store the message. Every time a new message is added, it is stored in this array. 
+
+**How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.**
+
+Based on the example above, the value "Hello" is extracted from the query parameter ```s=How+are+you?```, and is added to the ```newMessage``` array at the next available position, based on the current value of i, which is ```i = 1```. Initially, the integer variable ```i``` was 1 when the ```newMessages``` array contained the value "Hello" at index 0 from the previous request. However, after this second request, the ```newMessage``` array will contain the value "How+are+you?" at index 1. Then, the value of i is incremented by 1 to reflect the addition of the new message. 
+
+
 
 ## Part 2
 
