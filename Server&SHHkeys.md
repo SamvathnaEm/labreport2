@@ -53,10 +53,10 @@ Based on the example above, the value "Hello" is extracted from the query parame
 
 ### Show with ```ls```
 ### The path to the private key for my SSH key for logging into ```ieng6``` (on your computer or on the home directory of the lab computer)
-![Image](part2(1).png)
+![Image](path.pub.png)
 
 ### The path to the public key for your SSH key for logging into ```ieng6``` (within your account on ```ieng6```)
-![Image](part2(2).png)
+![Image](path.private.png)
 
 ### A terminal interaction where you log into ```ieng6``` with your course-specific account without being asked for a password.
 ![Image](part2(3-1).png)
